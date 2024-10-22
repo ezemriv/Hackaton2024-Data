@@ -176,7 +176,7 @@ class DataLoader():
         merged_sound_data = pd.concat([df_sound_1, df_sound_2], ignore_index=True)
 
         # Extract the filename and save to clean_data_path
-        sound_filename = os.path.basename(sound_path1)  # Get the filename (e.g., 'opendatabcn_pics-csv.csv')
+        sound_filename = os.path.basename(sound_path1)
         sound_clean_path = os.path.join(clean_data_path, sound_filename.replace('.csv', '_clean.csv'))  # Save as a CSV in clean_data folder
         merged_sound_data.to_csv(sound_clean_path, index=False)
         print(f"Final shape of sound data: {merged_sound_data.shape}")
