@@ -27,9 +27,30 @@ This project serves as the backbone for ensuring data is clean and ready for the
 └── README.md                   # Project documentation (this file)
 ```
 
+## 📊 Data Sources
+
+This project uses the following datasets from **Open Data Barcelona** to prepare and clean data related to tourism, noise levels, and points of interest:
+
+- **Tourist Density Areas**  
+  **Source**: [Intensitat d'Activitat Turística](https://opendata-ajuntament.barcelona.cat/data/ca/dataset/intensitat-activitat-turistica)  
+  **Format**: GPKG  
+  **Description**: Areas in Barcelona with high concentrations of tourism, including accommodations, leisure, and tourist attractions.
+
+- **Cultural Points of Interest**  
+  **Source**: [Punts d'Interès Turístic](https://opendata-ajuntament.barcelona.cat/data/ca/dataset/punts-informacio-turistica)  
+  **Description**: Detailed data on key cultural and tourist points of interest in the city.
+
+- **Environmental Noise Monitoring Data**  
+  **Source**: [Xarxa Soroll](https://opendata-ajuntament.barcelona.cat/data/ca/dataset/xarxasoroll-equipsmonitor-dades)  
+  **Description**: Noise monitoring data in Barcelona aimed at understanding environmental noise levels across the city.
+
+- **Geographic Data for Noise Sensors**  
+  **Source**: [Geographic Data for Noise Sensors](https://opendata-ajuntament.barcelona.cat/data/ca/dataset/xarxasoroll-equipsmonitor-instal)  
+  **Description**: Geographic information for noise sensors that wasn't included in the initial noise monitoring data.
+
 ## 🚀 Data Processing Summary:
 
-1. **Tourist Concentration Data** (`process_gpkg_data`):
+1. **Tourist Concentration Data**[] (`process_gpkg_data`): 
     - **Steps**:
         - Load the dataset from GeoPackage format.
         - Calculate centroids for each geometry and reproject them to WGS84.
