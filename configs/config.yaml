@@ -4,5 +4,8 @@ data_paths:
   clean_data_folder: 'clean_data/'
   concentration_file: 'data/2019_turisme_allotjament.gpkg'
   sites_file: 'data/opendatabcn_pics-csv.csv'
+  sound_file1: 'data/2019_1S_XarxaSoroll_EqMonitor_Dades_1Hora.csv'
+  sound_file2: 'data/2019_2S_XarxaSoroll_EqMonitor_Dades_1Hora.csv'
+  ids_file: 'data/XarxaSoroll_EquipsMonitor_Instal.csv'
+  sound_file: 
   interest_encoding: 'UTF-16'
-
