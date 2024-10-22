@@ -1,0 +1,8 @@
+# configs/config.yaml
+
+data_paths:
+  clean_data_folder: 'clean_data/'
+  concentration_file: 'data/2019_turisme_allotjament.gpkg'
+  sites_file: 'data/opendatabcn_pics-csv.csv'
+  interest_encoding: 'UTF-16'
+
